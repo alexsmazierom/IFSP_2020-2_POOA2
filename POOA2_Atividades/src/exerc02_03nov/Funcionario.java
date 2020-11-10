@@ -1,4 +1,6 @@
+
 package exerc02_03nov;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -7,7 +9,11 @@ import javax.swing.JOptionPane;
  */
 public class Funcionario {
     private String nome;
-    private float salario = 0;
+    private float salario;
+
+    public Funcionario() {
+        this.salario = (float) 0.00;
+    }
     
     public void aumentarSalario(float salario, float percentual) {
         System.out.println("exerc02_03nov.Funcionario.aumentarSalario()");
